@@ -9,7 +9,7 @@ from PIL import Image, ImageTk
 from tkinter.messagebox import showinfo
 
 #delcaring variables
-url = 'https://v6.exchangerate-api.com/v6/e387ba33bc8873b856d25c41/latest/USD'
+url = 'https://v6.exchangerate-api.com/v6/"Enter api key here"/latest/USD'
 fileData = {}
 fileFound = True
 
@@ -56,7 +56,7 @@ if(fileFound==False):
             fileData = json.load(json_file)
     except:
         fileFound=False
-        
+
 #checking if last time currencies were updates is more then 6 hours
 cur_time = datetime.now()
 cur_hour = int(cur_time.strftime("%H"))

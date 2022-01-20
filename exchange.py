@@ -17,6 +17,7 @@ fileFound = True
     function creates file if it does not exist
     or if last time currency was updated is more then 6 hours
 '''
+#change
 def create_file():
     # Making our request
         response = requests.get(url)
